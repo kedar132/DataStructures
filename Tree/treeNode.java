@@ -30,9 +30,9 @@ public void setright(treeNode right){
 
 public static void main(String []args){
 	treeNode ob=new treeNode(6);
-	treeNode obj=new treeNode(1);
+	//treeNode obj=new treeNode(1);
 	treeNode root=ob;
-	treeNode root1=obj;
+	//treeNode root1=obj;
 	ob.setleft(new treeNode(3));
 	ob.setright(new treeNode(8));
 	ob.left.setleft(new treeNode(2));
@@ -58,14 +58,16 @@ public static void main(String []args){
 	obj.right.setleft(new treeNode(6));
 	obj.right.setright(new treeNode(7));
 	//obj.right.left.setright(new treeNode(8));*/
+	levelOrder l=new levelOrder();
+	l.levelOrder(root);
 	
-	treetoDoubleList p=new treetoDoubleList();
-	LinkedList lp = p.treetoDoubleList(root);
-	LinkedList head = lp;
-	while(lp.getNext()!=head){
-		System.out.println (lp.getData());
-		lp=lp.getNext();
-	}
+	//treetoDoubleList p=new treetoDoubleList();
+	//LinkedList lp = p.treetoDoubleList(root);
+	//LinkedList head = lp;
+//	while(lp.getNext()!=head){
+	//	System.out.println (lp.getData());
+		//lp=lp.getNext();
+	//}
 	
 	//mirror m=new mirror();
 	//treeNode M=m.mirror(root);
